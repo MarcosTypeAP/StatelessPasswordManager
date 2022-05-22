@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/corne"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/appNameTextInput"
+        style="@android:style/Widget.Material.EditText"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="68dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@color/cream_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.331"
+        tools:text="asdfasdfasdf" />
+
+    <EditText
+        android:id="@+id/passwordTextInput"
+        style="@android:style/Widget.Material.EditText"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="68dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textAllCaps="false"
+        android:textColor="@color/cream_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appNameTextInput"
+        app:layout_constraintVertical_bias="0.007"
+        tools:text="sdfsadfasdfasdfsdaf" />
+
+    <TextView
+        android:id="@+id/generatedPasswordTextView"
+        android:layout_width="409dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="1dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="*****"
+        android:textAlignment="center"
+        android:textColor="@color/cream_2"
+        android:textSize="16sp"
+        android:typeface="monospace"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTextInput"
+        tools:text="HXRYYMCBKAEMÑRITDOWLangley201OKLQALJA-22+"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/buttonsLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginBottom="239dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTextInput"
+        app:layout_constraintVertical_bias="1.0"
+        tools:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/copyPasswordToClipboardButton"
+            style="@android:style/Widget.Material.ImageButton"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            android:foregroundTint="@color/cream_2"
+            android:scaleType="center"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:scrollX="-2.3dp"
+            android:tint="@color/cream_1"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_action_copy"
+            tools:visibility="visible" />
+
+        <Space
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/showPasswordButton"
+            style="@android:style/Widget.Material.ImageButton"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:background="#00D8C0C5"
+            android:scaleType="fitCenter"
+            android:scaleX="0.55"
+            android:scaleY="0.55"
+            android:tint="@color/cream_2"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_action_eye"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
