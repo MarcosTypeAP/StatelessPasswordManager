@@ -16,8 +16,8 @@ First you need to clone the repository or [download it](https://github.com/Marco
 ```bash
 #!/bin/bash
 
-git clone https://github.com/MarcosTypeAP/google-password-tester-bot.git
-cd google-password-tester-bot/
+git clone https://github.com/MarcosTypeAP/StatelessPasswordManager.git
+cd StatelessPasswordManager/
 ```
 
 You also need to install [**Android Studio**](https://developer.android.com/studio) with a minimum of **SDK 26 (Android 8.0)**.
